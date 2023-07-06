@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Francisco Gil</h1>
+    <img src="fotomia.jpg" alt="mi foto"width="800" height="570" />>
+    <h2>Tengo 19 años</h2>
+    <h2>Vivo en Rosario, San Luis 5259</h2>
+    <h3>mis series favoritas:</h3>
+    <ul>
+        <li><h4>Fleabag</h4></li>
+        <li><h4>The Boys</h4></li>
+        <li><h4>Game of thrones</h4></li>
+    </ul>
+    <h3>Mis películas favoritas:</h3>
+    <ol>
+        <li><h4>Death Proof</h4></li>
+        <li><h4>Mr. Fantastic Fox</h4></li>
+        <li><h4>El cisne negro</h4></li>
+    </ol>
+    <p>Rosario está al lado del rio Paraná, por eso crecí visitando la costa. Me gusta remar y también tomar unos mates al lado del río.</p>
+
+
+    <p>Me gusta cocinar. Desde la cuarentena que me quedo viendo videos de Paulina Cocina e inventado cosas con la comida. Mi plato favorito que es perfecto para hacerlo un día de lluvia son los ñoquis.</p>
+    <p>Vivir en Rosario me hizo dar cuenta que no me gusta ir al centro de la ciudad al mediodia. Mucha acumulación de gente.</p>
+    <p><a href="https://www.instagram.com/_franciscogil/"target=" blank">ir a mi perfil de instagram</a></p>
+    <form action="" method="">
+        <p>
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre"/>
+            <label for="nom">Apellido</label>
+            <input type="text" name="apellido"/>
+        </p>
+        <p>
+            <label for="nom">Telefono</label>
+            <input type="text" name="telefono"/>
+            <label for="nom">Email</label>
+            <input type="text" name="email"/>            
+        </p>
+        <h3>Razón para contactarme:</h3>
+        <ul>
+            <li>
+                <input type="checkbox" name="Razon[]" value="trabajo" id="trabajo"/>
+                <label for="trabajo">trabajo</label>
+            </li>
+            <li>
+                <input type="checkbox" name="Razon[]" value="consultasserie" id="consultasserie"/>
+                <label for="consultasserie">consultas sobre mis series favoritas</label>
+            </li>
+            <li>
+                <input type="checkbox" name="Razon[]" value="otraconsulta" id="otraconsulta"/>
+                <label for="otraconsulta">otra razón</label>
+               <p><h4>Comentario:</h4></p>
+                <p>
+                    <label for="comentarios"></label>
+                    <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                </p>
+            </li>            
+        </ul>
+        <p>
+            <label for="Utilidad">Te fue útil</label>
+            <select name="Utilidad">
+                <option value="nada">-</option>
+                <option value="si">si</option>
+                <option value="no">no</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="borrar"/>
+        </p>
+    </form>
+</body>
+</html>
