@@ -1,0 +1,69 @@
+h1{
+    color: rgb(16, 48, 68);
+    font-family: 'Coming Soon', cursive;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    background-color: aquamarine;
+}
+h2{
+    color: rgb(85, 118, 167);
+    font-style: oblique;
+    line-height: 10px;
+    text-align: center;
+}
+h3{
+    color: rgb(56, 59, 241);
+    font-family: monospace;
+    font-size: 25px;
+}
+.listas{
+    color: blueviolet;
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 5px;
+}
+
+p{
+   font-family: 'Coming Soon', cursive;
+   font-weight: bold;
+   font-size: 30px;
+   line-height: 50px;
+}
+#puntos{
+
+    font-size: 60px;
+    text-align: center;
+}
+img{
+    margin-left:650px;
+    width: 600px;
+}
+#cocinar{
+    background-color: rgb(212, 108, 108);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 400px;
+}
+#Ros{
+    background-color: rgb(212, 108, 108);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+#no{
+    background-color: rgb(212, 108, 108);
+    width: 400px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 800px;
+
+}
