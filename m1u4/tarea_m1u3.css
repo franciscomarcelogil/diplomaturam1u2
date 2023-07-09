@@ -67,3 +67,13 @@ img{
     margin-left: 800px;
 
 }
+.opc{
+    line-height: 30px;
+    font-size: 20px;
+    font-family: monospace;
+}
+#formu{
+    font-size: 20px;
+    line-height: 5px;
+    font-family: monospace;
+}

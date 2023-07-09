@@ -44,38 +44,40 @@
         <h2>-----------------------------------------</h2>
     </div>
     <form action="" method="">
-        <p>
+        <p class="opc">
             <label for="nom">Nombre</label>
             <input type="text" name="nombre"/>
             <label for="nom">Apellido</label>
             <input type="text" name="apellido"/>
         </p>
-        <p>
+        <p class="opc">
             <label for="nom">Telefono</label>
             <input type="text" name="telefono"/>
             <label for="nom">Email</label>
             <input type="text" name="email"/>            
         </p>
-        <h3>Razón para contactarme:</h3>
-        <ul>
-            <li>
-                <input type="checkbox" name="Razon[]" value="trabajo" id="trabajo"/>
-                <label for="trabajo">trabajo</label>
-            </li>
-            <li>
-                <input type="checkbox" name="Razon[]" value="consultasserie" id="consultasserie"/>
-                <label for="consultasserie">consultas sobre mis series favoritas</label>
-            </li>
-            <li>
-                <input type="checkbox" name="Razon[]" value="otraconsulta" id="otraconsulta"/>
-                <label for="otraconsulta">otra razón</label>
-               <p><h4>Comentario:</h4></p>
-                <p>
-                    <label for="comentarios"></label>
-                    <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-                </p>
-            </li>            
-        </ul>
+        <h3 class="opc">Razón para contactarme:</h3>
+        <div id="formu">
+            <ul>
+                <li>
+                    <input type="checkbox" name="Razon[]" value="trabajo" id="trabajo"/>
+                    <label for="trabajo">trabajo</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Razon[]" value="consultasserie" id="consultasserie"/>
+                    <label for="consultasserie">consultas sobre mis series favoritas</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Razon[]" value="otraconsulta" id="otraconsulta"/>
+                    <label for="otraconsulta">otra razón</label>
+                   <p><h4>Comentario:</h4></p>
+                    <p>
+                        <label for="comentarios"></label>
+                        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                    </p>
+                </li>            
+            </ul>
+        </div>
         <p>
             <label for="Utilidad">Te fue útil</label>
             <select name="Utilidad">
