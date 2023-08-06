@@ -14,7 +14,7 @@ body{
     background-color: rgb(13, 19, 17);
     display:flex;
     flex-direction: column;
-    align-items: center;
+
 }
 .princ{
     background-color: rgb(102, 155, 137);
@@ -36,44 +36,3 @@ aside{
     float: right;
     width: 200px;
 }
-@media screen and (min-width: 230px) and (max-width: 800px){
-    body{
-        margin: 0;
-        padding: 0;
-
-        align-items: center;
-        width: 100%;
-
-
-    }
-    header{
-        width: 100%;
-    }
-    .princ{
-        background-color: rgb(102, 155, 137);
-        width: 100%;
-        align-items: center;
-
-
-    }
-    nav{
-        background-color: rgb(189, 153, 101);
-        width: 100%;
- 
-
-
-    }
-    .med{
-        background-color: rgb(171, 177, 59);
-        width: auto;
-
- 
-
-    }
-    aside{
-        background-color: rgb(198, 97, 24);
-        width: auto;
-
-    }
-}   
-

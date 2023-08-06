@@ -1,0 +1,40 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header{
+    background-color: rgb(164, 243, 216);
+    width: 100%;
+}
+.princ{
+    background-color: rgb(102, 155, 137);
+    width: 100%;
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+nav{
+    background-color: rgb(212, 178, 129);
+    width: 100%;
+
+
+}
+.med{
+    background-color: rgb(179, 132, 76);
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    margin-left: 0px;
+}
+aside{
+    background-color: rgb(160, 233, 173);
+    padding: 10px;
+    width: 100%;
+}
+ 
