@@ -1,0 +1,79 @@
+header{
+    width: 800px;
+    background-color: rgb(102, 155, 137);
+
+}
+nav{
+    float: left;
+    background-color: rgb(244, 168, 53);
+    height: 100px;
+    width: 100px;
+    padding-right: 30px;
+}
+body{
+    background-color: rgb(13, 19, 17);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.princ{
+    background-color: rgb(102, 155, 137);
+    width: 800px;
+}
+.med{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin-left: 10px;
+    float: left;
+    padding: 10px;
+    width: 400px;
+    
+}
+
+aside{
+    background-color: rgb(143, 120, 90);
+    padding: 10px;
+    float: right;
+    width: 200px;
+}
+@media screen and (min-width: 230px) and (max-width: 800px){
+    body{
+        margin: 0;
+        padding: 0;
+
+        align-items: center;
+        width: 100%;
+
+
+    }
+    header{
+        width: 100%;
+    }
+    .princ{
+        background-color: rgb(102, 155, 137);
+        width: 100%;
+        align-items: center;
+
+
+    }
+    nav{
+        background-color: rgb(189, 153, 101);
+        width: 100%;
+ 
+
+
+    }
+    .med{
+        background-color: rgb(171, 177, 59);
+        width: auto;
+
+ 
+
+    }
+    aside{
+        background-color: rgb(198, 97, 24);
+        width: auto;
+
+    }
+}   
+
