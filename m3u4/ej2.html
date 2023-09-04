@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <textarea  id="mensaje"></textarea>
+        <div id="contador">0</div>
+      </div>
+
+
+    <script>
+
+        const mensaje = document.getElementById('mensaje');
+        const contador = document.getElementById('contador');
+        mensaje.addEventListener('input', function() {
+            const longitud = mensaje.value.length;
+            contador.innerHTML = `${longitud}`;
+        });
+
+
+    </script>
+</body>
+
+</html>

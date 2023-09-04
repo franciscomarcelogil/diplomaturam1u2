@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ej1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+    <button id="c1" style="background-color: blue;height: 100px;width: 100px;"></button>
+    <button id="c2" style="background-color:green;height: 100px;width: 100px;"></button>
+    <button id="c3" style="background-color:red;height: 100px;width: 100px;"></button>
+    </div>
+
+    <script>
+        const azul=document.getElementById('c1')
+        const verde=document.getElementById('c2')
+        const rojo=document.getElementById('c3')
+        azul.addEventListener('click',function(){
+            document.body.style.backgroundColor= 'blue'
+        })
+        
+        verde.addEventListener('click',function(){
+            document.body.style.backgroundColor= 'green'
+        })
+        
+        rojo.addEventListener('click',function(){
+            document.body.style.backgroundColor= 'red'
+        })
+
+    </script>
+
+
+</body>
+</html>
