@@ -1,0 +1,288 @@
+1)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 - 21 (total de 22, La consulta tardó 0,0004 segundos.)
+
+
+SELECT nombre, trabajo
+from empleados;
+
+
+nombre	trabajo	
+Juan	Programador Senior	
+Gonzalo	Programador Senior	
+Ana	Desarrollador Web	
+Maria	Desarrollador Web	
+Alfredo	Programador	
+Juan	Programador	
+Eduardo	Programador	
+Alejandro	Programador	
+Hernan	Especialista Multimedia	
+Paublo	Especialista Multimedia	
+Arturo	Especialista Multimedia	
+Jimena	Dise ador Web Senior	
+Roberto	Administrador de Sistemas	
+Daniel	Administrador de Sistemas	
+Miguel	Ejecutivo de Ventas Senior	
+Monica	Ejecutivo de Ventas	
+Alicia	Ejecutivo de Ventas	
+Jose	Ejecutivo de Ventas	
+Sabrina	Gerente de Soporte Tecnico	
+Pedro	Gerente de Finanzas	
+Mariano	Presidente	
+pabli	programador	
+
+2)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 - 21 (total de 22, La consulta tardó 0,0004 segundos.)
+
+
+SELECT nombre, trabajo
+from empleados;
+
+
+nombre	trabajo	
+Juan	Programador Senior	
+Gonzalo	Programador Senior	
+Ana	Desarrollador Web	
+Maria	Desarrollador Web	
+Alfredo	Programador	
+Juan	Programador	
+Eduardo	Programador	
+Alejandro	Programador	
+Hernan	Especialista Multimedia	
+Paublo	Especialista Multimedia	
+Arturo	Especialista Multimedia	
+Jimena	Dise ador Web Senior	
+Roberto	Administrador de Sistemas	
+Daniel	Administrador de Sistemas	
+Miguel	Ejecutivo de Ventas Senior	
+Monica	Ejecutivo de Ventas	
+Alicia	Ejecutivo de Ventas	
+Jose	Ejecutivo de Ventas	
+Sabrina	Gerente de Soporte Tecnico	
+Pedro	Gerente de Finanzas	
+Mariano	Presidente	
+pabli	programador	
+
+
+
+4)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 - 13 (total de 14, La consulta tardó 0,0008 segundos.)
+
+
+SELECT nombre, edad
+FROM empleados
+WHERE edad >30;
+
+
+nombre	edad	
+Juan	32	
+Gonzalo	32	
+Alfredo	31	
+Juan	34	
+Alejandro	32	
+Hernan	33	
+Paublo	43	
+Arturo	32	
+Jimena	32	
+Roberto	35	
+Daniel	34	
+Miguel	36	
+Sabrina	32	
+Pedro	36	
+
+
+11)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  0 (total de 1, La consulta tardó 0,0002 segundos.)
+
+
+SELECT nombre, edad from empleados where nombre like '%i';
+
+
+
+pabli	32	
+
+
+3)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  6 (total de 7, La consulta tardó 0,0002 segundos.)
+
+
+SELECT nombre, edad
+FROM empleados
+where trabajo like '%programador%';
+
+
+nombre	edad	
+Juan	32	
+Gonzalo	32	
+Alfredo	31	
+Juan	34	
+Eduardo	25	
+Alejandro	32	
+pabli	32	
+
+5)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  1 (total de 2, La consulta tardó 0,0002 segundos.)
+
+
+SELECT apellido, mail
+from empleados
+where nombre like '%Juan%';
+
+
+apellido	mail	
+Hagan	juan_hagan@bignet.com	
+Aguero	juan@bignet.com	
+
+6)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  8 (total de 9, La consulta tardó 0,0002 segundos.)
+
+
+SELECT nombre
+from empleados
+where trabajo like '%Programador%'
+or trabajo like '%Desarrollador Web%';
+
+
+nombre	
+Juan	
+Gonzalo	
+Ana	
+Maria	
+Alfredo	
+Juan	
+Eduardo	
+Alejandro	
+pabli	
+
+
+7)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  5 (total de 6, La consulta tardó 0,0006 segundos.)
+
+
+SELECT id_emp, nombre, apellido, trabajo
+FROM empleados
+WHERE id_emp BETWEEN 15 and 20;
+
+
+id_emp	nombre	apellido	trabajo	
+15	Miguel	Harper	Ejecutivo de Ventas Senior	
+16	Monica	Sanchez	Ejecutivo de Ventas	
+17	Alicia	Simlai	Ejecutivo de Ventas	
+18	Jose	Iriarte	Ejecutivo de Ventas	
+19	Sabrina	Allende	Gerente de Soporte Tecnico	
+20	Pedro	Campion	Gerente de Finanzas	
+
+8)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  3 (total de 4, La consulta tardó 0,0003 segundos.)
+
+
+SELECT nombre, apellido, trabajo, salario
+FROM empleados
+where trabajo like '%Programador%'
+and salario < 90000;
+
+
+nombre	apellido	trabajo	salario	
+Alfredo	Fernandez	Programador	75000	
+Juan	Aguero	Programador	80000	
+Eduardo	Sacan	Programador	75000	
+Alejandro	Nanda	Programador	70000	
+
+9)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  2 (total de 3, La consulta tardó 0,0003 segundos.)
+
+
+SELECT nombre, apellido, trabajo, salario
+FROM empleados
+where trabajo like '%Programador%'
+and salario BETWEEN 75000 and 90000;
+
+
+nombre	apellido	trabajo	salario	
+Alfredo	Fernandez	Programador	75000	
+Juan	Aguero	Programador	80000	
+Eduardo	Sacan	Programador	75000	
+
+10)
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/table/sql&db=m5u2&table=empleados
+
+   Mostrando filas 0 -  3 (total de 4, La consulta tardó 0,0002 segundos.)
+
+
+SELECT nombre, apellido
+FROM empleados
+WHERE apellido like 's%';
+
+
+nombre	apellido	
+Eduardo	Sacan	
+Paublo	Simon	
+Monica	Sanchez	
+Alicia	Simlai	
+
+12)
+INSERT INTO empleados
+VALUES ( 23, 'Francisco', 'Perez', 'Programador', 26 , 90000, 'francisco@bignet.com')
+
+13)
+ 1 fila afectada. (La consulta tardó 0,0003 segundos.)
+DELETE FROM empleados where nombre = 'Hernan' and apellido = 'Rosso';
+
+14)
+ 1 fila afectada. (La consulta tardó 0,0012 segundos.)
+UPDATE empleados set salario = 90000 where nombre = 'Daniel' and apellido = 'Gutierrez';
+
+
+
+LISTA FINAL DE COMO QUEDO LA TABLA
+MySQL:3306/m5u2/empleados/		http://localhost/phpmyadmin/index.php?route=/sql&db=m5u2&table=empleados&pos=0
+
+   Mostrando filas 0 - 21 (total de 22, La consulta tardó 0,0003 segundos.)
+
+
+SELECT * FROM `empleados`
+
+
+id_emp	nombre	apellido	trabajo	edad	salario	mail	
+1	Juan	Hagan	Programador Senior	32	120000	juan_hagan@bignet.com	
+2	Gonzalo	Pillai	Programador Senior	32	110000	g_pillai@bignet.com	
+3	Ana	Dharma	Desarrollador Web	27	90000	ana@bignet.com	
+4	Maria	Anchor	Desarrollador Web	26	85000	mary@bignet.com	
+5	Alfredo	Fernandez	Programador	31	75000	af@bignet.com	
+6	Juan	Aguero	Programador	34	80000	juan@bignet.com	
+7	Eduardo	Sacan	Programador	25	75000	eddie@bignet.com	
+8	Alejandro	Nanda	Programador	32	70000	alenanda@bignet.com	
+10	Paublo	Simon	Especialista Multimedia	43	85000	ps@bignet.com	
+11	Arturo	Hernandez	Especialista Multimedia	32	75000	arturo@bignet.com	
+12	Jimena	Cazado	Dise ador Web Senior	32	110000	jimena@bignet.com	
+13	Roberto	Luis	Administrador de Sistemas	35	100000	roberto@bignet.com	
+14	Daniel	Gutierrez	Administrador de Sistemas	34	90000	daniel@bignet.com	
+15	Miguel	Harper	Ejecutivo de Ventas Senior	36	120000	miguel@bignet.com	
+16	Monica	Sanchez	Ejecutivo de Ventas	30	90000	monica@bignet.com	
+17	Alicia	Simlai	Ejecutivo de Ventas	27	70000	alicia@bignet.com	
+18	Jose	Iriarte	Ejecutivo de Ventas	27	72000	jose@bignet.com	
+19	Sabrina	Allende	Gerente de Soporte Tecnico	32	200000	sabrina@bignet.com	
+20	Pedro	Campion	Gerente de Finanzas	36	220000	pedro@bignet.com	
+21	Mariano	Dharma	Presidente	28	300000	mariano@bignet.com	
+22	pabli	gil	programador	32	120000	fdhfjkshfk@gmail.com	
+23	Francisco	Perez	Programador	26	90000	francisco@bignet.com	
+
